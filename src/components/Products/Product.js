@@ -1,11 +1,13 @@
 import { Card, Col } from "antd";
 import { Link } from "react-router-dom";
 const { Meta } = Card;
-const Product = ({id, title, image, description, price}) => {
+const Product = ({product}) => {
   return (
     <div>
       <Col>
-        <Link to={`/product/${id}`}>
+        <Link to={`/product/${product.id}`}
+        state={{product}}
+        >
         <Card
           hoverable
           style={{
@@ -14,7 +16,7 @@ const Product = ({id, title, image, description, price}) => {
           cover={
             <img
               alt="product"
-              src={image}
+              src={product.image}
               style={{
                 width: 240,
                 height: 240
@@ -22,8 +24,8 @@ const Product = ({id, title, image, description, price}) => {
             />
           }
         >
-          <Meta title={title} description={`${description.substring(0, 21)}...`}  />
-          <p>{`$ ${price}`}</p>
+          <Meta title={product.title} description={`${product.description.substring(0, 21)}...`}  />
+          <p>{`$ ${product.price}`}</p>
         </Card>
         </Link>
       </Col>
