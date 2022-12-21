@@ -24,7 +24,7 @@ const Product = ({product}) => {
             />
           }
         >
-          <Meta title={product.title} description={`${product.description.substring(0, 21)}...`}  />
+          <Meta title={product.title} description={`${product.description.substring(0, 21)}...`}  quantity={product.quantity}/>
           <p>{`$ ${product.price}`}</p>
         </Card>
         </Link>
