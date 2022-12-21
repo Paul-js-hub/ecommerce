@@ -1,7 +1,10 @@
 import { useDispatch } from "react-redux";
 import { addToCart, getCartCount } from "../../redux/cart/cart";
 import { useLocation }from 'react-router-dom'
-import {Button, Col, Row} from 'antd'
+import {Button, Col, Row, Typography} from 'antd'
+import './productdetail.css'
+
+const { Title } = Typography;
 const ProductDetail = () => {
     const dispatch = useDispatch();
     const { state } = useLocation();
@@ -13,12 +16,16 @@ const ProductDetail = () => {
     return product ? (
         <Row>
             <Col span={12}>
+            <div className="image">
             <img src={product.image} alt='product'/>
+            </div>
             </Col>
             <Col span={12}>
-            <p>{product.title}</p>
+            <div className="content-container">
+            <Title level={2}>{product.title}</Title>
             <p>{product.description}</p>
-            <p>{product.price}</p>
+            <strong><p>$ {product.price}</p></strong>
+            </div>
             <Button type='primary' onClick={handleAddToCart}>Add to Cart</Button>
             </Col>
         </Row>
