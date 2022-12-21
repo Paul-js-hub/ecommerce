@@ -1,3 +1,7 @@
 .products-container {
     overflow-x: hidden !important;
 }
+
+.ant-row {
+    justify-content: center !important;
+}
