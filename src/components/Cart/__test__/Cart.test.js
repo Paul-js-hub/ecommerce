@@ -1,10 +1,7 @@
 import renderer from "react-test-renderer";
 import {
   render,
-  waitFor,
-  fireEvent,
   screen,
-  cleanup,
 } from "@testing-library/react";
 import { Provider } from "react-redux";
 import { HashRouter as Router } from "react-router-dom";
@@ -24,7 +21,8 @@ describe("Test Products Component", () => {
   it("renders cart items", () => {
     expect(tree).toMatchSnapshot();
   });
-  it("has total price text", () => {
+
+  it("displays total price text", () => {
     const tree = render(
       <Provider store={store}>
         <Router>
@@ -32,6 +30,9 @@ describe("Test Products Component", () => {
         </Router>
       </Provider>
     );
-    expect(screen.getByText("Total price")).toBeInTheDocument();
+    const element = screen.getByRole("heading", {
+      name: "Your cart is empty"
+    });
+    expect(element).toBeInTheDocument();
   });
 });
