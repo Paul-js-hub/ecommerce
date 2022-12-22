@@ -1,22 +1,22 @@
 .logo {
-    width: 120px;
-    height: 31px;
-    background: rgba(255, 255, 255, 0.2);
-    margin: 16px 24px 16px 0;
-    float: left;
-  }
+  width: 120px;
+  height: 31px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px 24px 16px 0;
+  float: left;
+}
 
-  .logo > h2{
-    margin-left: 8px;
-    color: azure;
-  }
+.logo > h2 {
+  margin-left: 8px;
+  color: azure;
+}
 
-  .cart > svg{
-    vertical-align: middle;
-    font-size: 20px;
-  }
-  
-  ul.ant-menu.ant-menu-dark.ant-menu-root.ant-menu-horizontal {
-    display: flex;
-    justify-content: flex-end;
-  }
+.cart > svg {
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+ul.ant-menu.ant-menu-dark.ant-menu-root.ant-menu-horizontal {
+  display: flex;
+  justify-content: flex-end;
+}

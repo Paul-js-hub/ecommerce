@@ -1,8 +1,5 @@
 import renderer from "react-test-renderer";
-import {
-  render,
-  screen,
-} from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { Provider } from "react-redux";
 import { HashRouter as Router } from "react-router-dom";
 import store from "../../../redux/store";
@@ -31,7 +28,7 @@ describe("Test Products Component", () => {
       </Provider>
     );
     const element = screen.getByRole("heading", {
-      name: "Your cart is empty"
+      name: "Your cart is empty",
     });
     expect(element).toBeInTheDocument();
   });

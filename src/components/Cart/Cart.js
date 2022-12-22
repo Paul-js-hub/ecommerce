@@ -70,7 +70,7 @@ const Cart = () => {
                             cart.length > 0 &&
                             cart.map((product, index) => {
                               return (
-                                <MDBRow className="mb-4 d-flex justify-content-between align-items-center">
+                                <MDBRow className="mb-4 d-flex justify-content-between align-items-center" key={index}>
                                   <MDBCol md="2" lg="2" xl="2">
                                     <MDBCardImage
                                       src={product.image}

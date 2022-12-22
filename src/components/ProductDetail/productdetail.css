@@ -11,3 +11,8 @@
 .content-container {
   margin-top: 36px;
 }
+
+.button {
+  display: flex;
+  justify-content: space-evenly;
+}

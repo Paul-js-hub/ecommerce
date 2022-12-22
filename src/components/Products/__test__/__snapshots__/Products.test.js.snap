@@ -12,6 +12,17 @@ exports[`Test Products Component renders all products 1`] = `
         "marginRight": -16,
       }
     }
-  />
+  >
+    <div
+      className="spinner-container spinner-border"
+      role="status"
+    >
+      <span
+        className="visually-hidden"
+      >
+        Loading...
+      </span>
+    </div>
+  </div>
 </div>
 `;
