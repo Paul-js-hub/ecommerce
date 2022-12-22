@@ -1,7 +1,18 @@
 .products-container {
-    overflow-x: hidden !important;
+  overflow-x: hidden !important;
 }
 
 .ant-row {
-    justify-content: center !important;
+  justify-content: center !important;
+}
+
+.spinner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+#product {
+  padding: 12px 0px;
 }

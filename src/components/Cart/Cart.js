@@ -192,7 +192,7 @@ const Cart = () => {
                           <hr className="my-4" />
 
                           <div className="d-flex justify-content-between mb-5">
-                            <MDBTypography tag="h5" className="text-uppercase">
+                            <MDBTypography data-testid="total-text" tag="h5" className="text-uppercase">
                               Total price
                             </MDBTypography>
                             <MDBTypography tag="h5">$ {total}</MDBTypography>

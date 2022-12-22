@@ -1,10 +1,16 @@
 import {createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios";
 
 const url = 'https://fakestoreapi.com/products';
 export const getProducts = createAsyncThunk('products/getProducts', async () => {
-  const response = await axios.get(url);
-  return response.data;
+  const response = await fetch(url, {
+    method: "GET",
+    headers: {
+      Accept: 'application/json',
+      'Content-type': 'application/json'
+    }
+  }).then(res => res.json())
+  .then(data => data)
+  return response
 });
 
 const productsSlice = createSlice({

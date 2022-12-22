@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Products Component renders cart items 1`] = `
+<div
+  className="w-100 alert alert-warning mt-5"
+>
+  <h2
+    className="h4 text-center mb-3"
+  >
+    Your cart is empty
+  </h2>
+  <p
+    className="text-center"
+  >
+    Looks like you have not added products to your cart. Let's buy some.
+  </p>
+  <div
+    className="text-center"
+  >
+    <a
+      className="btn btn-danger"
+      href="#/"
+      onClick={[Function]}
+    >
+      Shop now
+    </a>
+  </div>
+</div>
+`;
