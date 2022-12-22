@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Products Component renders all products 1`] = `
+<div
+  className="products-container"
+>
+  <div
+    className="ant-row css-dev-only-do-not-override-9ntgx0"
+    style={
+      Object {
+        "marginLeft": -16,
+        "marginRight": -16,
+      }
+    }
+  />
+</div>
+`;

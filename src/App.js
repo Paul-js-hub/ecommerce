@@ -1,9 +1,9 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import NavHeader from './components/Navbar/Navbar';
-import Products  from './components/Products/Products';
-import ProductDetail from './components/ProductDetail/ProductDetail';
-import Cart from './components/Cart/Cart';
+import NavHeader from './components/Navbar/Navbar.js';
+import Products  from './components/Products/Products.js';
+import ProductDetail from './components/ProductDetail/ProductDetail.js';
+import Cart from './components/Cart/Cart.js';
 import './App.css';
 
 function App() {

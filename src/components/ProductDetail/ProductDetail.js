@@ -26,7 +26,7 @@ const ProductDetail = () => {
             <p>{product.description}</p>
             <strong><p>$ {product.price}</p></strong>
             </div>
-            <Button type='primary' onClick={handleAddToCart}>Add to Cart</Button>
+            <Button data-testid="add-to-cart" type='primary' onClick={handleAddToCart}>Add to Cart</Button>
             </Col>
         </Row>
     ) : " No product found";

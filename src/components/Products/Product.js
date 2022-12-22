@@ -1,9 +1,10 @@
 import { Card, Col } from "antd";
 import { Link } from "react-router-dom";
+import "./products.css";
 const { Meta } = Card;
 const Product = ({product}) => {
   return (
-    <div>
+    <div id="product">
       <Col>
         <Link to={`/product/${product.id}`}
         state={{product}}

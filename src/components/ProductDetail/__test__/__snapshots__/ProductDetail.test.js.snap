@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Product detail component it displays product details 1`] = `" No product found"`;
