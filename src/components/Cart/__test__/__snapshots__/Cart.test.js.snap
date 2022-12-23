@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test Products Component renders cart items 1`] = `
+exports[`Test Cart Component renders cart items 1`] = `
 <div
   className="w-100 alert alert-warning mt-5"
 >
